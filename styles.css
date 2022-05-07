@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+html, body, *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    
+}
+body{
+    background-color: var(--backgroundColor);
+}
+:root{
+    --checked: #2568FB;
+    --backgroundColor: #EBE8E2;
+    --fontColor: #000;
+    --borderColor: rgb(112, 111, 111);
+}
+header .navBar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 100px;
+    width: 100%;
+    height: 80px;
+    background-color: #1E3050;
+}
+header .navBar a{
+    border: 1px solid black;
+    padding: 6px 12px;
+    background-color: #77BCC2;
+}
+header h1{
+    margin-top: 100px;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+main{
+    width: 80%;
+    margin: 150px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    justify-items: center;
+}
+
+footer{
+    height: 50px;
+    background-color: #1E3050;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+footer p , footer a{
+    color: #fff;
+    font-family: 'Architects Daughter', cursive;
+}
+footer a{
+    text-decoration: underline;
+    font-size: 18px;
+    cursor: pointer;
+}
+footer span{
+    width: 5px;
+}
+.container{
+    border: 1px solid var(--borderColor);
+    width: 500px;
+}
+.flexContainer{
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    align-items: center;
+    width: 80%;
+}
+.toggles{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    border-bottom: 1px solid var(--borderColor);
+}
+.toggles p{
+    font-weight: 700;
+}
+
+.toggles .radioButtons{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.toggles .radioButtons label span{
+    display: inline-block;
+    padding: 3px 6px;
+    border: 1px solid var(--borderColor);
+    cursor: pointer;
+    white-space: nowrap;
+    border-radius: .25rem;
+    font-size: 14px;
+}
+.toggles .radioButtons label input{
+    display: none;
+}
+.toggles .radioButtons label input:checked + span{
+    background-color: var(--checked);
+    color: #fff;
+    border: transparent;
+    box-shadow: 0px 9px 13px -14px rgba(0,0,0,0.52) inset;
+    
+}
+.boxContainer{
+    display: flex;
+    width: 100%;
+    padding-bottom: 50px;
+    display: flex;
+    transition: all 400ms linear;
+    flex-wrap: wrap;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid transparent;
+    transition: all 300ms linear;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1;
+}
+#alignItemsContainer .boxContainer .box{
+    justify-content: flex-start;
+}
+
+#alignItemsContainer .boxContainer .box span, #alignSelfContainer .boxContainer .box span{
+    width: 100%;
+    height: 1px;
+    background-color: var(--borderColor);
+}
+#alignItemsContainer .box:nth-child(1), #alignSelfContainer .box:nth-child(2){
+    font-size: 16px;
+}
+#alignItemsContainer .box:nth-child(2), #alignSelfContainer .box:nth-child(4){
+    font-size: 40px;
+}
+#alignItemsContainer .box:nth-child(3), #alignSelfContainer .box:nth-child(3){
+    font-size: 12px;
+}
+#alignItemsContainer .box:nth-child(4), #alignSelfContainer .box:nth-child(1){
+    font-size: 24px;
+}
+
+#alignContentContainer .boxContainer{
+    padding: 0;
+    height: 400px;
+    align-content: flex-start;
+    
+}
+#alignContentContainer .boxContainer .acboxes{
+    display: flex;
+    height: 100px;
+    width: 400px;
+    transition: all 400ms linear;
+}
+#alignContentContainer .boxContainer .box{
+   height: 100%;
+}
+
+.flexItems{
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    align-items: center;
+    width: 80%;
+}
+.controllersContainer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.controllersContainer div .orderButtons{
+    display: flex;
+    align-items: center;
+}
+.controllersContainer div p{
+    display: inline-block;
+    white-space: nowrap;
+    width: 30px;
+}
+
+.controllersContainer div button{
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 3px 9px;
+    border-radius: 35px;
+}
+.shrinkBoxContainer{
+    width: 100%;
+    flex-wrap: nowrap;
+}
+.shrinkBox{
+    width: 200px;
+}
+#alignSelfContainer .boxContainer{
+    padding: 0;
+    height: 200px;
+}
+#alignSelfContainer .boxContainer .box{
+    justify-content: flex-start;
+}
+#alignSelfContainer .box:nth-child(2){
+    font-size: 16px;
+    margin-top: 24px;
+}
+#alignSelfContainer .box:nth-child(4){
+    font-size: 40px;
+}
+#alignSelfContainer .box:nth-child(3){
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+#alignSelfContainer .box:nth-child(1){
+    font-size: 24px;
+    margin-top: 16px;
+}
+
+@media screen and (max-width: 1280px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        
+    }
+    .container{
+        width: 80%;
+    }
+    .flexContainer, .flexItems{
+        width: 100%;
+        margin: 0 auto;
+    }
+    @media screen and (max-width: 1200px) {
+        main{
+            
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .flexItems{
+            grid-column: 1/2;
+            margin-top: 100px;
+        }
+        .container{
+            width: 60%;
+        }
+        @media (max-width: 800px) {
+            header .navBar{
+                justify-content: center;
+            }
+            .container{
+                width: 80%;
+            }
+            @media (max-width: 500px) {
+            
+                .box{
+                    width: 50px;
+                    height: 50px;
+                }
+                .toggles .radioButtons label span{
+                    font-size: 10px;
+                }
+                .controllersContainer div p{
+                    width: 10px;
+                    font-size: 12px;
+                }
+                .controllersContainer div button{
+                    font-size: 10px;
+                }
+                .controllersContainer{
+                    column-gap: 10px;
+                }
+                .controllersContainer div:nth-child(1){
+                    white-space: nowrap;
+                }
+                @media (max-width: 330px) {
+                    header h1{
+                        font-size: 30px;
+                    }
+                    header .navBar a{
+                        padding: 3px 6px;
+                        white-space: nowrap;
+                    }
+                    .controllersContainer div button{
+                        padding: 1px 5px;
+                    }
+                    .controllersContainer div p{
+                        width: 10px;
+                        font-size: 8px;
+                    }
+                    .controllersContainer div button{
+                        font-size: 8px;
+                    }
+                    .controllersContainer{
+                        column-gap: 8px;
+                    }
+                }
+            }
+        }
+        
+    }
+    
+}

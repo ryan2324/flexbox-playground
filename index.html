@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox PlayGround</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navBar">
+            <a href="#">
+                Source Code
+            </a>
+        </nav>
+        <h1>Flexbox PlayGround</h1>
+    </header>
+    <main>
+        <div class="flexContainer">
+            <h2>Flex Container</h2>
+            <div id="flexDirectionContainer" class="container ">
+                <div class="toggles">
+                    <p>flex-direction</p>
+                    <div class="radioButtons">
+                        <label for="row">
+                            <input checked id="row" type="radio" name="flex-direction">
+                            <span>row</span>
+                        </label>
+                        <label for="column">
+                            <input id="column" type="radio" name="flex-direction">
+                            <span>column</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="boxContainer">
+                    <div class="box">1</div>
+                    <div class="box">2</div>
+                    <div class="box">3</div>
+                    <div class="box">4</div>
+                </div>
+            </div>
+            <div id="justifyContentContainer" class="container ">
+                <div class="toggles">
+                <p>justify-content</p>
+                <div class="radioButtons">
+                    <label for="jc-start">
+                        <input checked id="jc-start" type="radio" name="justify-content">
+                        <span>flex-start</span>
+                    </label>
+                    <label for="jc-center">
+                        <input id="jc-center" type="radio" name="justify-content">
+                        <span>center</span>
+                    </label>
+                    <label for="jc-end">
+                        <input id="jc-end" type="radio" name="justify-content">
+                        <span>flex-end</span>
+                    </label>
+                    <label for="jc-space-around">
+                        <input id="jc-space-around" type="radio" name="justify-content">
+                        <span>space-around</span>
+                    </label>
+                    <label for="jc-space-evenly">
+                        <input id="jc-space-evenly" type="radio" name="justify-content">
+                        <span>space-evenly</span>
+                    </label>
+                    <label for="jc-space-between">
+                        <input id="jc-space-between" type="radio" name="justify-content">
+                        <span>space-between</span>
+                    </label>
+                </div>
+                </div>
+                <div class="boxContainer">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+                </div>
+            </div>
+            <div id="alignItemsContainer" class="container ">
+                <div class="toggles">
+                <p>align-items</p>
+                <div class="radioButtons">
+                    <label for="ai-start">
+                        <input checked id="ai-start" type="radio" name="align-items">
+                        <span>flex-start</span>
+                    </label>
+                    <label for="ai-center">
+                        <input id="ai-center" type="radio" name="align-items">
+                        <span>center</span>
+                    </label>
+                    <label for="ai-end">
+                        <input id="ai-end" type="radio" name="align-items">
+                        <span>flex-end</span>
+                    </label>
+                    <label for="ai-baseline">
+                        <input id="ai-baseline" type="radio" name="align-items">
+                        <span>baseline</span>
+                    </label>
+                    <label for="ai-stretch">
+                        <input id="ai-stretch" type="radio" name="align-items">
+                        <span>stretch</span>
+                    </label>
+                </div>
+                </div>
+                <div class="boxContainer">
+                <div class="box">1 <span></span> </div>
+                <div class="box">2 <span></span></div>
+                <div class="box">3 <span></span></div>
+                <div class="box">4 <span></span></div>
+                </div>
+            </div>
+            <div id="alignContentContainer" class="container ">
+                <div class="toggles">
+                <p>align-content</p>
+                <div class="radioButtons">
+                    <label for="ac-start">
+                        <input checked id="ac-start" type="radio" name="align-content">
+                        <span>flex-start</span>
+                    </label>
+                    <label for="ac-center">
+                        <input id="ac-center" type="radio" name="align-content">
+                        <span>center</span>
+                    </label>
+                    <label for="ac-end">
+                        <input id="ac-end" type="radio" name="align-content">
+                        <span>flex-end</span>
+                    </label>    
+                    <label for="ac-space-around">
+                        <input id="ac-space-around" type="radio" name="align-content">
+                        <span>space-around</span>
+                    </label>
+                    <label for="ac-space-evenly">
+                        <input id="ac-space-evenly" type="radio" name="align-content">
+                        <span>space-evenly</span>
+                    </label>
+                    <label for="ac-space-between">
+                        <input id="ac-space-between" type="radio" name="align-content">
+                        <span>space-between</span>
+                    </label>
+                    <label for="ac-stretch">
+                        <input id="ac-stretch" type="radio" name="align-content">
+                        <span>stretch</span>
+                    </label>
+                </div>
+                </div>
+                <div class="boxContainer">
+                    <div class="acboxes">
+                        <div class="box">1 <span></span> </div>
+                        <div class="box">2 <span></span></div>
+                        <div class="box">3 <span></span></div>
+                        <div class="box">4 <span></span></div>
+                    </div>
+                    <div class="acboxes">
+                        <div class="box">5 <span></span> </div>
+                        <div class="box">6 <span></span></div>
+                        <div class="box">7 <span></span></div>
+                        <div class="box">8 <span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flexItems">
+            <h2>Flex Items</h2>
+            <div id="orderItemsContainer" class="container ">
+                <div class="toggles">
+                    <p>order</p>
+                    <div class="controllersContainer">
+                        <div>
+                            <div class="orderButtons">
+                                <button class="decrement">-</button>
+                                <p id="box1-order">0</p>
+                                <button class="increment">+</button>
+                            </div>
+                            <p >Box 1</p>
+                        </div>
+                        <div>
+                            <div class="orderButtons">
+                                <button class="decrement">-</button>
+                                <p id="box2-order">0</p>
+                                <button class="increment">+</button>
+                            </div>
+                            <p >Box 2</p>
+                        </div>
+                        <div>
+                            <div class="orderButtons">
+                                <button class="decrement">-</button>
+                                <p id="box3-order">0</p>
+                                <button class="increment">+</button>
+                            </div>
+                            <p >Box 3</p>
+                        </div>
+                        <div>
+                            <div class="orderButtons">
+                                <button class="decrement">-</button>
+                                <p id="box4-order">0</p>
+                                <button class="increment">+</button>
+                            </div>
+                            <p >Box 4</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="boxContainer">
+                    <div id="order-box1" class="box">1</div>
+                    <div id="order-box2" class="box">2</div>
+                    <div id="order-box3" class="box">3</div>
+                    <div id="order-box4" class="box">4</div>
+                </div>
+            </div>
+            <div id="growItemsContainer" class="container ">
+                <div class="toggles">
+                    <p>flex-grow</p>
+                    <div class="controllersContainer">
+                        <div>
+                            <div class="growButtons">
+                                <button class="decrement">-</button>
+                                <p id="box1-grow">1</p>
+                                <button class="increment">+</button>
+                            </div>
+                            <p >Box 1</p>
+                        </div>
+                        <div>
+                            <div class="growButtons">
+                                <button class="decrement">-</button>
+                                <p id="box2-grow">1</p>
+                                <button class="increment">+</button>
+                            </div>
+                            <p >Box 2</p>
+                        </div>
+                        <div>
+                            <div class="growButtons">
+                                <button class="decrement">-</button>
+                                <p id="box3-grow">1</p>
+                                <button class="increment">+</button>
+                            </div>
+                            <p >Box 3</p>
+                        </div>
+                        <div>
+                            <div class="growButtons">
+                                <button class="decrement">-</button>
+                                <p id="box4-grow">1</p>
+                                <button class="increment">+</button>
+                            </div>
+                            <p >Box 4</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="boxContainer">
+                    <div id="grow-box1" class="box">1</div>
+                    <div id="grow-box2" class="box">2</div>
+                    <div id="grow-box3" class="box">3</div>
+                    <div id="grow-box4" class="box">4</div>
+                </div>
+            </div>
+            <div id="shrinkItemsContainer" class="container ">
+                <div class="toggles">
+                    <p>flex-shrink</p>
+                    <div class="controllersContainer">
+                        <div>
+                            <div class="shrinkButtons">
+                                <button class="decrement">-</button>
+                                <p id="box1-shrink">1</p>
+                                <button class="increment">+</button>
+                            </div>
+                            <p >Box 1</p>
+                        </div>
+                        <div>
+                            <div class="shrinkButtons">
+                                <button class="decrement">-</button>
+                                <p id="box2-shrink">1</p>
+                                <button class="increment">+</button>
+                            </div>
+                            <p >Box 2</p>
+                        </div>
+                        <div>
+                            <div class="shrinkButtons">
+                                <button class="decrement">-</button>
+                                <p id="box3-shrink">1</p>
+                                <button class="increment">+</button>
+                            </div>
+                            <p >Box 3</p>
+                        </div>
+                        <div>
+                            <div class="shrinkButtons">
+                                <button class="decrement">-</button>
+                                <p id="box4-shrink">1</p>
+                                <button class="increment">+</button>
+                            </div>
+                            <p >Box 4</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="boxContainer shrinkBoxContainer">
+                    <div id="shrink-box1" class="box shrinkBox">1</div>
+                    <div id="shrink-box2" class="box shrinkBox">2</div>
+                    <div id="shrink-box3" class="box shrinkBox">3</div>
+                    <div id="shrink-box4" class="box shrinkBox">4</div>
+                </div>
+            </div>
+            <div id="alignSelfContainer" class="container ">
+                <div class="toggles">
+                <p>align-self</p>
+                <div class="radioButtons">
+                    <label for="as-start">
+                        <input checked id="as-start" type="radio" name="align-self">
+                        <span>flex-start</span>
+                    </label>
+                    <label for="as-center">
+                        <input id="as-center" type="radio" name="align-self">
+                        <span>center</span>
+                    </label>
+                    <label for="as-end">
+                        <input id="as-end" type="radio" name="align-self">
+                        <span>flex-end</span>
+                    </label>
+                    <label for="as-baseline">
+                        <input id="as-baseline" type="radio" name="align-self">
+                        <span>baseline</span>
+                    </label>
+                    <label for="as-stretch">
+                        <input id="as-stretch" type="radio" name="align-self">
+                        <span>stretch</span>
+                    </label>
+                </div>
+                </div>
+                <div class="boxContainer">
+                <div class="box">1 <span></span> </div>
+                <div class="box">2 <span></span></div>
+                <div class="box">3 (Align me!)<span></span></div> 
+                <div class="box">4 <span></span></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Developed and Design by</p> <span></span><a src="#"> Ryan Clariño</a>
+    </footer>
+    <script src="./scripts/jquery.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
